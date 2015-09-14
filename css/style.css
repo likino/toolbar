@@ -1,0 +1,71 @@
+/*工具条*/
+.toolbar {
+  position: fixed;
+  right: 0.6%;
+  top: 65%;
+  margin-bottom: -120px; 
+    z-index: 999}
+
+.toolbar-item {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  transition: background-position 0.5s;
+  -webkit-transition: background-position 0.5s;
+  -moz-transition: background-position 0.5s;
+  -o-transition: background-position 0.5s;
+ /* margin-top: 1px; */}
+
+  .toolbar-item:hover .toolbar-layer {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1); }
+
+.toolbar-item-weixin {
+  background: url(../images/weixin.png ) no-repeat; }
+  .toolbar-item-weixin:hover {
+    background: url(../images/weixin.png )0 -61px no-repeat; }
+  .toolbar-item-weixin .toolbar-layer {
+    height: 200px; 
+    background-position: 0 0;}
+
+.toolbar-layer {
+  position: absolute;
+  right: 59px;
+  width: 161px;
+  bottom: 5px;
+  background: url(../images/lxfs.png) no-repeat;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform-origin: right bottom;
+  transform: scale(0.01);
+  -webkit-transform: scale(0.01);
+  -moz-transform: scale(0.01);
+  -o-transform: scale(0.01);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s; 
+    box-shadow:-3px 5px 6px #4F4E4E;
+    -moz-box-shadow:-3px 5px 6px #4F4E4E;
+    -webkit-box-shadow:-3px 5px 6px #4F4E4E;
+    -o-box-shadow:-3px 5px 6px #4F4E4E;}
+
+.toolbar-item-phone {
+  background: url(../images/dianhua.png) no-repeat; }
+  .toolbar-item-phone:hover {
+    background: url(../images/dianhua.png)0 -61px no-repeat; }
+  .toolbar-item-phone .toolbar-layer {
+    height: 200px; 
+    background-position: 0 -200px;}
+
+.toolbar-item-top {
+  background: url(../images/top.png) no-repeat; }
+  .toolbar-item-top:hover {
+    background: url(../images/top.png)0 -61px no-repeat; }
+  .toolbar-item-top .toolbar-layer {
+    height: 93px; }
